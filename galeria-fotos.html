@@ -1,0 +1,47 @@
+<!-- Nota: Para que Tome la Variable debera ser el archivo .php-->
+
+<?php $var2="color:red;font-size:15px;font-family:Times New Roman;text-align:center;";?>
+
+<!DOCTYPE html>
+     <html lang="es">
+        <head>
+		<title> Galeria </title>
+            <meta charset="utf-8">
+			<meta name="viewport" content="width=divice-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum=scale=1">
+              <link rel="stylesheet" href="estilos-fotos.css">
+			  <script src="jquery.js"></script>
+       </head>
+
+        <body>
+			<h1 class="titulo"><?php echo $var2 ?></h1> <!--Galeria con Imagenes de diversos tamaños -->
+            <!-- https://www.youtube.com/watch?v=HDrFypgPd_0-->
+			<ul class="galeria">
+				<li class="galeria_item"><img src="imagenes/mesa01.jpg" class="galeria_img">
+					<p style="color:black;font-size:15px;font-family:Times New Roman;text-align:center;">
+					<strong>Prueba Foto01</strong></p>				
+				</li>
+				 <!-- Comienzas las de ITOP-CMDB-->
+				<li class="galeria_item"><img src="imagenes/Servidores/Servidor01.JPG" class="galeria_img">
+				<p style="color:black;font-size:15px;font-family:Times New Roman;text-align:center;">
+					<strong>Prueba Foto01</strong></p>
+				</li>
+				<!-- Comienzas Modelo con Variable-->
+				<li class="galeria_item"><img src="imagenes/Servidores/Servidor02.JPG" class="galeria_img">
+					<p style="<?php echo $var2 ?>"> 
+						<strong>Prueba Foto03</strong></p>
+						
+					
+				</li>
+				
+				<li class="galeria_item"><img src="imagenes/Servidores/Servidor03.JPG" class="galeria_img"></li>
+				<li class="galeria_item"><img src="imagenes/Servidores/Servidor03.JPG" class="galeria_img"></li>
+				<li class="galeria_item"><img src="imagenes/Servidores/Servidor01.JPG" class="galeria_img"></li>
+				<li class="galeria_item"><img src="imagenes/Servidores/Servidor02.JPG" class="galeria_img"></li>
+				<li class="galeria_item"><img src="imagenes/Servidores/Servidor03.JPG" class="galeria_img"></li>
+				 
+				
+			</ul>
+			<script src="modal.js"></script>
+        </body>
+    </html>
+	
